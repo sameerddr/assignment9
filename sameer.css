@@ -1,0 +1,252 @@
+/* header section  */
+
+.container {
+    max-width: 1140px;
+    height: 90px;
+    margin: 0 auto;
+    /* background-color: #e3e3e3; */
+    padding-top: 20px;
+}
+
+.nav {
+    float: right;
+    padding-top: 20px;
+    /* padding-left: 15px; */
+}
+
+.nav a {
+    padding-right: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.nav a:hover {
+    background-color: aliceblue;
+    color: purple;
+    border-radius: 5px;
+}
+
+.heading {
+    float: left;
+    font-size: 70px;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+header {
+    padding: 20px 0px;
+    background-color: #c15355;
+    line-height: 60px;
+    color: white;
+}
+
+.box {
+    width: 100%;
+    height: 250px;
+    background-color: #c15355;
+    color: white;
+    text-align: center;
+    padding-top: 90px;
+    /* margin: 0 auto; */
+}
+
+.box h1 {
+    font-size: 80px;
+    color: black;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.box h1:hover {
+    color: brown;
+    background-color: wheat;
+    border-radius: 15px;
+}
+
+.box p {
+    padding-top: 30px;
+    font-size: larger;
+}
+
+.box p:hover {
+    font-size: 50px;
+}
+
+.newcontainer {
+    /* float: right; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1200px; */
+    flex-wrap: wrap;
+    /* padding: 40px 0; */
+    background-color: #c15355;
+}
+
+.newcontainer .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.5), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.5), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.newcontainer .card .square {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.newcontainer .card:hover .square {
+    transform: translate(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #b95ce4, #4f29cc);
+}
+
+.newcontainer .card .square .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.newcontainer .card:hover .square .content a {
+    background: #ff56;
+}
+
+.content img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content h1 h3 {
+    font-size: larger;
+}
+
+.head {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 40px;
+    background-color: #c15355;
+    /* margin-top: 90px; */
+}
+
+.two {
+    background-color: #ebf5fc;
+    margin-bottom: 600px;
+}
+
+.lorem {
+    /* display: inline; */
+    float: left;
+    text-align: center;
+    text-align: left;
+    width: 300px;
+    height: 300px;
+    padding-left: 220px;
+    padding-top: 90px;
+    margin: 0 auto;
+    font-size: larger;
+    background-color: #ebf5fc;
+}
+
+.lorem h1 {
+    color: red;
+    padding: 30px;
+}
+
+.lorem h1:hover {
+    background-color: gray;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.lorem p {
+    padding-top: 5px;
+}
+
+.lorem p:hover {
+    box-shadow: inset 400px 5px 5px rgba(87, 68, 68, 0.5), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.5), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.lorem button {
+    background-color: red;
+    color: white;
+    width: 90px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.lorem button:hover {
+    background-color: #03a9f4;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.end {
+    padding-top: 500px;
+    margin-bottom: 100px;
+    background-color: #b95ce4;
+}
+
+h1 {
+    padding: 650px;
+}
+
+footer {
+    height: 20px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+footer i {
+    float: right;
+    padding: 0 30px;
+}
+
+.top {
+    --offset: 50px;
+    position: sticky;
+    bottom: 120px;
+    margin-right: 10px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+}
